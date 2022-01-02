@@ -1,4 +1,163 @@
-.elaine-welcome-note {
-    background-color: #ffe4c4;
-    color: #ff7f50;
+body {
+    margin: 0;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.main-header {
+    display: flex;
+    background-color: #65b0bb;
+    color: #ffffff;
+    height: 55vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcome-note {
+    margin: 0;
+    font-weight: 300;
+}
+
+.header-description {
+    margin-bottom: 24px;
+    font-weight: 100;
+}
+
+.navigation {
+    background-color: #e1dac7;
+    height: 12vh;
+    display: flex;
+    column-gap: 6rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #56432d;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+/* Download button */
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #56432d;
+    cursor: pointer;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0;
+    min-height: 3rem;
+    padding: 12px;
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  .download-button:hover,
+  .download-button:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  .navigation a:hover,
+  .download-button:hover {
+    transform: translateY(-1px);
+  }
+  
+  .download-button:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+.education-work {
+    display: flex;
+    column-gap: 36px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+@media screen and (max-width: 1023px) {
+    body > .navigation {
+        display: none;
+    }
+
+    .education-work {
+        justify-content: start;
+        margin-left: 5%;
+        padding: 13px;
+    }
+
+    .contact .navigation {
+        flex-direction: column;
+    }
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin-bottom: 24px;
+}
+
+.skills {
+    background-color: #e1aa46;
+}
+
+.main-footer {
+    background-color: #65b0bb;
+}
+
+.content-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #56432d;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
